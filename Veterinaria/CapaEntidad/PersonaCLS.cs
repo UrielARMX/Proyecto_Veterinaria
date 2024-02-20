@@ -2,9 +2,9 @@
 {
     public class PersonaCLS
     {
-        private int iid { get; set; }
-        private string nombreCompleto { get; set; }
-        private string correo {  get; set; }
-        private string fechaNacimientoCadena { get; set; }
+        public int iid { get; set; }
+        public string nombreCompleto { get; set; }
+        public string correo {  get; set; }
+        public string fechaNacimientoCadena { get; set; }
     }
 }
