@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using CapaEntidad;
 
 namespace ProyectoNetCore.Controllers
 {
@@ -15,6 +16,14 @@ namespace ProyectoNetCore.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public async Task<string> ListarPersona()
+        {
+            var cliente = _httpClientFactory.CreateClient();
+            cliente.BaseAddress = new Uri(_baseurl);
+            string respuesta = await cliente.GetStringAsync("/api/Persona");
+            return respuesta;
         }
     }
 }

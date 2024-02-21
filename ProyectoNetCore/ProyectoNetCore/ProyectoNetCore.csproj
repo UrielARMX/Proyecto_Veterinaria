@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="CapaEntidad">
+      <HintPath>..\..\Veterinaria\CapaEntidad\bin\Debug\net7.0\CapaEntidad.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
